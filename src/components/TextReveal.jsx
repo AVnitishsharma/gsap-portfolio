@@ -12,7 +12,7 @@ const TextReveal = forwardRef(
       scrollEnd = "top 25%",
       splitby = "chars",
       duration = 0.5,
-      stagger = 0.1,
+      stagger = 0.06,
       delay = 0.2,
       ease = "power4.out",
     },
@@ -53,6 +53,7 @@ const TextReveal = forwardRef(
         yPercent: 0,
         opacity: 1,
         duration,
+        splitby,
         ease,
         delay,
         stagger: {

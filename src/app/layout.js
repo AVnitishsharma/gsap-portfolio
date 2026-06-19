@@ -1,5 +1,6 @@
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "GSAP Portfolio",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       className={`h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Navbar />
         <SmoothScroll>
           {children}
         </SmoothScroll>

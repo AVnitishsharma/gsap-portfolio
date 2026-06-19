@@ -1,20 +1,11 @@
 "use client";
-import TextReveal from "@/components/TextReveal";
-import { useRef } from "react";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
+import {projects} from "@/data/project";
 
 export default function Home() {
-  const targetRef = useRef(null);
-
   return (
-    <main className="h-[300vh]">
-      <TextReveal ref={targetRef} trigger="manual" className="text-4xl bg-green-600">
-        hello everyone
-      </TextReveal>
-      <div 
-        onMouseEnter={() => targetRef.current?.play()}
-        onMouseLeave={() => targetRef.current?.reverse()}
-        className="h-8 w-20 bg-red-600 m-2"
-      >Hover</div>
+    <main className="h-screen w-full">
+      <InfiniteCarousel projects={projects} />
     </main>
   );
 }
