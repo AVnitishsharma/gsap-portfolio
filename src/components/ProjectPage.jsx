@@ -135,7 +135,7 @@ const ProjectPage = ({ project, nextProject, prevProject }) => {
               })
             }
           >
-            <h1 className="mb-2.5">{prevProject.title}</h1>
+            <h1 className="mb-2.5 text-center text-3xl">{prevProject.title}</h1>
             <img
               className="cursor-none hover:scale-105 transition-all duration-500"
               src={prevProject.coverImage}
@@ -166,7 +166,7 @@ const ProjectPage = ({ project, nextProject, prevProject }) => {
               })
             }
           >
-            <h1 className="mb-2.5" >{nextProject.title}</h1>
+            <h1 className="mb-2.5 text-center text-3xl" >{nextProject.title}</h1>
             <img
               className="cursor-none hover:scale-105 transition-all duration-500"
               src={nextProject.coverImage}
